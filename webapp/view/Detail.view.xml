@@ -1,0 +1,36 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	controllerName="com.sap.build.standard.untitledPrototype.controller.Detail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="{i18n>TitleDetail}">
+		<content>
+			<f:SimpleForm editable="false" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="3">
+				<f:content>
+					<Label text="{i18n>ID}"></Label>
+					<Text id="ID" text="{ID}">
+					</Text>
+					<Label text="{i18n>Sum}"></Label>
+					<Text id="Sum" text="{Sum}">
+					</Text>
+					<Label text="{i18n>Description}"></Label>
+					<Text id="Description" text="{Description}">
+					</Text>
+					<Label text="{i18n>Country}"></Label>
+					<Input id="Country" type="Text" value="{Country}">
+					</Input>
+					<Label text="{i18n>City}"></Label>
+					<Input id="City" type="Text" value="{City}">
+					</Input>
+				</f:content>
+			</f:SimpleForm> 
+		</content>
+		<footer>
+            <OverflowToolbar>
+                <content>
+                	<Button id="Save" type="Emphasized" text="{i18n>Save}" press="onSaveMessageWarningDialogPress">
+                    </Button>
+                    <Button id="Delete" type="Reject" text="{i18n>Delete}" press="onDeleteMessageWarningDialogPress">
+                    </Button>
+                </content>
+            </OverflowToolbar>
+         </footer>
+	</Page>
+</mvc:View>
